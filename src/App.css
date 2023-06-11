@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/typing-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height:500px;
+    flex-direction: column;
+    border-radius: 40px;
+    color: white;
+    background: rgba(229, 241, 243, 0.1);
+    border: 4px dotted white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin-top: 0;
+    margin-bottom: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+    font-size: 2.8rem;
+    margin-top: -10px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main h3{
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.showSent{
+    margin-top: 0;
+    /* padding: 0; */
+    font-size: 1.7rem;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif"
+}
+
+ 
+
+input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    height: 40px;
+    width: 350px;
+    margin-top: 0px;
+}
+
+.minibox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 250px; 
+    color: black;
+    background-color: white;
+    height: 140px;
+    box-shadow: 2px 2px 7px 7px rgb(140, 228, 241);
+}
+
+.minibox button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(240, 229, 229);
+}
+
+.accTag{
+    margin-top: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    
+    .container{
+        width: 350px;
+        height: 350px;
+    }
+
+    input{
+        width: 250px;
+      
+    } 
 }
