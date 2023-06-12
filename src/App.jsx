@@ -15,7 +15,7 @@ function App() {
   // console.log(sentence.length)
   function randomSentence() {
     const inputs = "abcd efghijklmn opqrst uvw xyz";
-
+    //Sween Khan
     let setpara = "";
 
     for (let i = 0; i < 15; i++) {
@@ -80,9 +80,14 @@ function App() {
             <h1>Touch Typing Project</h1>
             <h3> Type the sentence below:</h3>
           </div>
-          <h2 className="showSent" style={{ color: isCorrect ? "green" : "red" }}> {sentence}</h2>
+          <h2
+            className="showSent"
+            style={{ color: isCorrect ? "green" : "red" }}
+          >
+            {" "}
+            {sentence}
+          </h2>
           <input
-             
             type="text"
             onChange={(e) => {
               setInputValue(e.target.value);
