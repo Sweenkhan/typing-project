@@ -7,31 +7,19 @@ function App() {
   const [keyCount, setKeyCount] = useState(0);
   const [keyCounted, setKeyCounted] = useState(false);
   const [accuraccy, setAccuraccy] = useState(0);
-  // const [timeShow, setTimeShow] = useState(30);
-
-  // const rightkey = []
-  // const wrongket = []
-
-  // console.log(sentence.length)
+   
+  
   function randomSentence() {
-    const inputs = "abcd efghijklmn opqrst uvw xyz";
+    const inputs = "abcdefghijklmnopqrstuvwxyz";
     //Sween Khan
     let setpara = "";
 
     for (let i = 0; i < 15; i++) {
-      let checkEmptySpace = "";
-      checkEmptySpace += inputs[Math.floor(Math.random() * inputs.length)];
 
-      if (" " === checkEmptySpace.slice(0, 1)) {
-        console.log("space in first");
-        i = 0;
-        setpara = "";
-      } else if (" " === checkEmptySpace.substring(4, 5)) {
-        console.log("space in last");
-        i = 0;
-        setpara = "";
+      if(i === 4 || i === 9) {
+           setpara += " "
       } else {
-        setpara += inputs[Math.floor(Math.random() * inputs.length)];
+        setpara += inputs[Math.floor(Math.random() * inputs.length)]; 
       }
     }
 

@@ -38,7 +38,7 @@ body {
     justify-content: center;
     flex-direction: column; 
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -54,20 +54,25 @@ h1{
 }
 
 .showSent{
+    background-color: white;
+    border-radius: 20px;
+    width: 34%;
+    height: 40px;
     margin-top: 0;
-    /* padding: 0; */
+    text-align: center;
     font-size: 1.7rem;
-    font-family: "Verdana, Geneva, Tahoma, sans-serif"
+    
 }
 
  
 
 input {
     font-size: 1.5rem;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 40px;
     width: 350px;
     margin-top: 0px;
+    padding-left: 11px;
 }
 
 .minibox{
@@ -75,7 +80,7 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 3px solid black;
+    border: none;
     border-radius: 10px;
     margin-top: 20px;
     padding: 5px;
@@ -83,7 +88,7 @@ input {
     color: black;
     background-color: white;
     height: 140px;
-    box-shadow: 2px 2px 7px 7px rgb(140, 228, 241);
+    box-shadow: 2px 2px 7px 7px rgb(199, 218, 221);
 }
 
 .minibox button {
@@ -106,7 +111,7 @@ input {
     
     .container{
         width: 350px;
-        height: 350px;
+        height: 550px;
     }
 
     input{
