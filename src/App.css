@@ -29,7 +29,6 @@ body {
     border: 4px dotted white;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif; 
-    
 }
 
 .main {
@@ -60,8 +59,7 @@ h1{
     height: 40px;
     margin-top: 0;
     text-align: center;
-    font-size: 1.7rem;
-    
+    font-size: 1.7rem; 
 }
 
  
