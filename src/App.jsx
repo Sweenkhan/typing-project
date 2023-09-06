@@ -8,7 +8,6 @@ function App() {
   const [keyCounted, setKeyCounted] = useState(false);
   const [accuraccy, setAccuraccy] = useState(0);
    
-  
   function randomSentence() {
     const inputs = "abcdefghijklmnopqrstuvwxyz";
     //Sween Khan
