@@ -8,7 +8,6 @@ function App() {
   const [keyCounted, setKeyCounted] = useState(false);
   const [accuraccy, setAccuraccy] = useState(0);
    
-
   function randomSentence() {
     const inputs = "abcdefghijklmnopqrstuvwxyz";
     //Sween Khan
@@ -22,7 +21,7 @@ function App() {
         setpara += inputs[Math.floor(Math.random() * inputs.length)]; 
       }
     }
-    
+
 
     setSentence(setpara);
     console.log(setpara);
